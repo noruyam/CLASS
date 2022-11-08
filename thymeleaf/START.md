@@ -11,7 +11,7 @@
      implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' 
      ```   
 
-     * `Maven` - pom.xml   
+   * `Maven` - pom.xml   
       ```
       <dependency>
           <groupId>org.springframework.boot</groupId>
