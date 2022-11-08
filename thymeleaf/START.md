@@ -41,7 +41,7 @@ resources/templates/hello.html
 </html>
   ```
 
-> 문법
+3. 문법   
 ![image](https://user-images.githubusercontent.com/51654048/200482883-a4ad2b04-14ce-408d-b860-690b4ce9e370.png)
 
 
