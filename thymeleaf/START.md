@@ -22,12 +22,15 @@ resources/templates/hello.html
   ```
 
 > 문법
-
-1. ``` html
+1. 
+``` html
 <tr th:each="member : ${members}">
  <td th:text="${member.id}"></td>
  <td th:text="${member.name}"></td>
 </tr>
 ```
+
 2. 
+``` html
 <p th:text="'hello ' + ${name}">hello! empty</p>
+```
