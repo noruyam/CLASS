@@ -42,7 +42,21 @@ resources/templates/hello.html
   ```
 
 > 문법
-![img_1.png](img_1.png)
+표현	설명	예제
+@{ ... }	URL 링크 표현식	th:href="@{/css/bootstrap.min.css}"
+		th:href="@{/{itemId}/edit(itemId=${item.id})}"
+| ... |	리터럴 대체	th:text="|Hi ${user.name}!|"
+		(= th:text="'Hi '+${user.name}+'!'"
+${ ... }	변수	th:text=${user.name}
+th:each	반복 출력	<tr th:each="item: ${items}">
+		  <td th:text="${item.price}">100</td>
+		</tr>
+*{ ... }	선택 변수	<tr th:object="${items}">
+		  <td th:text="*{price}">100</td>
+		</tr>
+#{ ... }	메시지. properties 같은 외부 자원에서 코드에 해당하는 문자열 get.	th:text="#{member.register}"
+![image](https://user-images.githubusercontent.com/51654048/200482883-a4ad2b04-14ce-408d-b860-690b4ce9e370.png)
+
 
 1. 반복과 출력
 
