@@ -20,6 +20,7 @@
 위 설정을 추가 후 빌드하면 application.properties에 아래 코드가 자동으로 추가된다.
 디폴트 설정을 원하지 않는다면 직접 수정해도 된다.
 
+---
 
 2. thymeleaf를 사용할 html에 다음 태그를 추가
 ```html
@@ -40,6 +41,8 @@ resources/templates/hello.html
 </body>
 </html>
   ```
+
+---
 
 3. 문법   
 ![image](https://user-images.githubusercontent.com/51654048/200482883-a4ad2b04-14ce-408d-b860-690b4ce9e370.png)
