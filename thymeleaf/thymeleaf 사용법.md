@@ -45,7 +45,7 @@ resources/templates/hello.html
 
 ---
 
-### 3. 문법 [참조](https://velog.io/@alicesykim95/Thymeleaf)
+### 3. 문법 [[참조]](https://velog.io/@alicesykim95/Thymeleaf)
    ![image](https://user-images.githubusercontent.com/51654048/200482883-a4ad2b04-14ce-408d-b860-690b4ce9e370.png)
 ---
 
