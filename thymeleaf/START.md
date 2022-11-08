@@ -4,19 +4,19 @@
 [스프링 공식 튜토리얼](https://spring.io/guides/gs/serving-web-content/)   
 [스프링부트 메뉴얼](https://docs.spring.io/spring-boot/docs/2.3.1.RELEASE/reference/html/spring-boot-features.html#boot-features-spring-mvc-template-engines)
 
-> 시작하기
-1. Gradle
- * `Gradle` - build.gradle에 
+> 
+1. 시작하기
+    * `Gradle` - build.gradle   
 ```
 implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' 
-```  
-* `Maven`  - pom.xml 
+```   
+    * `Maven` - pom.xml   
 ```
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-thymeleaf</artifactId>
 </dependency>
-```
+```   
 > 2. 
 
 > 예시
