@@ -29,8 +29,3 @@ resources/templates/hello.html
  <td th:text="${member.name}"></td>
 </tr>
 ```
-
-2. 
-``` html
-<p th:text="'hello ' + ${name}">hello! empty</p>
-```
