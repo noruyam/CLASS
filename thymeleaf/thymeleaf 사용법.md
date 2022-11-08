@@ -1,4 +1,4 @@
-# thymeleaf
+# Thymeleaf
 >공식사이트
 >>[thymeleaf 공식 사이트](https://www.thymeleaf.org/)   
 [스프링 공식 튜토리얼](https://spring.io/guides/gs/serving-web-content/)   
