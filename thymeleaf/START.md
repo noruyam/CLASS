@@ -4,6 +4,22 @@
 [스프링 공식 튜토리얼](https://spring.io/guides/gs/serving-web-content/)   
 [스프링부트 메뉴얼](https://docs.spring.io/spring-boot/docs/2.3.1.RELEASE/reference/html/spring-boot-features.html#boot-features-spring-mvc-template-engines)
 
+> 시작하기
+1. 
+ 1. `Gradle` - build.gradle에 
+```
+implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' 
+```
+등록
+ 2. `Maven`  - pom.xml 
+```
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
+``` 
+등록
+> 2. 
 
 > 예시
 resources/templates/hello.html
@@ -22,10 +38,11 @@ resources/templates/hello.html
   ```
 
 > 문법
-1. 
+1. 반복과 출력
 ``` html
 <tr th:each="member : ${members}">
  <td th:text="${member.id}"></td>
  <td th:text="${member.name}"></td>
 </tr>
 ```
+
