@@ -6,20 +6,26 @@
 
 # 시작하기
 1. 라이브러리 추가
-    1. `Gradle` - build.gradle   
+   * `Gradle` - build.gradle
     ```
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' 
     ```   
-    2. `Maven` - pom.xml   
+   * `Maven` - pom.xml
     ```
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-thymeleaf</artifactId>
     </dependency>
-    ```   
-> 2. 
+    ```
+위 설정을 추가 후 빌드하면 application.properties에 아래 코드가 자동으로 추가된다.
+디폴트 설정을 원하지 않는다면 직접 수정해도 된다.
 
-> 예시
+
+2. thymeleaf를 사용할 html에 다음 태그를 추가
+```html
+<html xmlns:th="http://www.thymeleaf.org">
+```
+ex)
 resources/templates/hello.html
 
 ``` html
@@ -36,7 +42,10 @@ resources/templates/hello.html
   ```
 
 > 문법
+![img_1.png](img_1.png)
+
 1. 반복과 출력
+
 ``` html
 <tr th:each="member : ${members}">
  <td th:text="${member.id}"></td>
