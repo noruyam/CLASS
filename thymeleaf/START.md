@@ -5,20 +5,18 @@
 [스프링부트 메뉴얼](https://docs.spring.io/spring-boot/docs/2.3.1.RELEASE/reference/html/spring-boot-features.html#boot-features-spring-mvc-template-engines)
 
 > 시작하기
-1. 
- 1. `Gradle` - build.gradle에 
+1. Gradle
+ * `Gradle` - build.gradle에 
 ```
 implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' 
-```
-등록
- 2. `Maven`  - pom.xml 
+```  
+* `Maven`  - pom.xml 
 ```
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-thymeleaf</artifactId>
 </dependency>
-``` 
-등록
+```
 > 2. 
 
 > 예시
