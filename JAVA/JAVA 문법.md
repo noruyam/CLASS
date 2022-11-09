@@ -2,11 +2,17 @@
 
 ---
 
->## substring
+>## substring()
 > ```
-> String substring(int startIndex);
-> String substring(int startIndex, int endIndex);
+> substring(int startIndex);
+> substring(int startIndex, int endIndex);
 > ```
 > startIndex는 시작지점의 인덱스 값이고, endIndex는 종료 지점의 인덱스 값이다.
 > 두 방식 모두 return 값으로 문자열(String)이 리턴된다.   
 ---
+
+>## split()
+> ```html
+> split(String regex)
+> ```
+> 파라미터로 들어오는 문자열을 기준으로 문자열을 쪼갠다. String[]을 리턴함.
