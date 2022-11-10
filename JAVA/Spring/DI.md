@@ -33,6 +33,16 @@ setting.xml에 빈을 등록해준다.
 메이븐 프로젝트로 변경하여 pom.xml에 ApplicationContext을 사용하기위한 dependency를 등록해준다.(https://mvnrepository.com/)   
 ApplicationContext 생성할때 bean이 등록된 xml을 통해서 생성해주면 xml에 등록된 bean 이름을 가지고 사용가능해진다.   
 
+* pom.xml
+```
+<dependency>
+  <groupId>org.springframework</groupId>
+  <artifactId>spring-context</artifactId>
+  <version>5.3.19</version>
+</dependency>
+```
+
+* setting.xml
 ```
 <!--Exam exam = new NewlecExam();-->
 <bean id="exam" class="spring.di.entity.NewlecExam"/>
@@ -43,6 +53,8 @@ ApplicationContext 생성할때 bean이 등록된 xml을 통해서 생성해주�
 <property name="exam"  ref="exam"/>
 </bean>
 ```
+
+* main.java
 ```java
 ApplicationContext context = new ClassPathXmlApplicationContext("spring/di/setting.xml");
 //ExamConsole console = (ExamConsole) context.getBean("console");
