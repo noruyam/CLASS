@@ -11,9 +11,11 @@ public class main() {
     public static void main(String[] args) {
         Exam exam = new NewlecExam();
         /*
-        ExamConsole = 인터페이스 InlineExamConsole = ExamConsole 상속클래스
+        ExamConsole = 인터페이스 
+        InlineExamConsole = ExamConsole 상속클래스
+        GridExamConsole = ExamConsole 상속클래스
+        ExamConsole이라는 중간 인터페이스를 놓고 클래스를 생성하도록 하여 결합력을 낮춤
         */
-
         //ExamConsole console = new InlineExamConsole(exam);
         ExamConsole console = new GridExamConsole(exam);
         console.print();
