@@ -48,7 +48,7 @@ console.print();
 
 <!--ExamConsole console = new GridExamConsole(exam);-->
 <bean id="console" class="spring.di.ui.GridExamConsole">
-  <!--console.setExam(exam); !!여기서 의존성 주입!! -->
+  <!--console.setExam(exam); !!`여기서 의존성 주입`!! -->
   <property name="exam"  ref="exam"/>
 </bean>
 ```
