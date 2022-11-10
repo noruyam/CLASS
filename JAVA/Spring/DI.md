@@ -9,8 +9,6 @@ DI란 외부에서 두 객체 간의 관계를 결정해주는 디자인 패턴�
 
 #### 1. 인터페이스를 사용하여 직접 주입해주는 방식
 ```java
-public class main() {
-    public static void main(String[] args) {
         Exam exam = new NewlecExam();
         /*
         ExamConsole = 인터페이스 
@@ -21,9 +19,6 @@ public class main() {
         //ExamConsole console = new InlineExamConsole(exam);
         ExamConsole console = new GridExamConsole(exam);
         console.print();
-
-    }
-}
 ```
 
 ---
