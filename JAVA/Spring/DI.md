@@ -9,16 +9,16 @@ DI란 외부에서 두 객체 간의 관계를 결정해주는 디자인 패턴�
 
 #### 1. 인터페이스를 사용하여 직접 주입해주는 방식
 ```java
-        Exam exam = new NewlecExam();
-        /*
-        ExamConsole = 인터페이스 
-        InlineExamConsole = ExamConsole 상속클래스
-        GridExamConsole = ExamConsole 상속클래스
-        ExamConsole이라는 중간 인터페이스를 놓고 클래스를 생성하도록 하여 결합력을 낮춤
-        */
-        //ExamConsole console = new InlineExamConsole(exam);
-        ExamConsole console = new GridExamConsole(exam);
-        console.print();
+Exam exam = new NewlecExam();
+/*
+ExamConsole = 인터페이스 
+InlineExamConsole = ExamConsole 상속클래스
+GridExamConsole = ExamConsole 상속클래스
+ExamConsole이라는 중간 인터페이스를 놓고 클래스를 생성하도록 하여 결합력을 낮춤
+*/
+//ExamConsole console = new InlineExamConsole(exam);
+ExamConsole console = new GridExamConsole(exam);
+console.print();
 ```
 
 ---
