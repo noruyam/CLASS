@@ -29,11 +29,11 @@ console.print();
 ```
 
 #### 3. xml에서 bean 등록하여 사용하는 방법
-setting.xml에 빈을 등록해준다.   
-메이븐 프로젝트로 변경하여 pom.xml에 ApplicationContext을 사용하기위한 dependency를 등록해준다.(https://mvnrepository.com/)   
-ApplicationContext 생성할때 bean이 등록된 xml을 통해서 생성해주면 xml에 등록된 bean 이름을 가지고 사용가능해진다.   
+
+   
 
 * pom.xml
+메이븐 프로젝트로 변경하여 pom.xml에 ApplicationContext을 사용하기위한 dependency를 등록해준다.(https://mvnrepository.com/)   
 ```
 <dependency>
   <groupId>org.springframework</groupId>
@@ -43,6 +43,7 @@ ApplicationContext 생성할때 bean이 등록된 xml을 통해서 생성해주�
 ```
 
 * setting.xml
+setting.xml에 빈을 등록해준다.
 ```
 <!--Exam exam = new NewlecExam();-->
 <bean id="exam" class="spring.di.entity.NewlecExam"/>
@@ -55,6 +56,7 @@ ApplicationContext 생성할때 bean이 등록된 xml을 통해서 생성해주�
 ```
 
 * main.java
+ApplicationContext 생성할때 위에서 bean을 설정한 setting.xml을 통해서 생성해주면 xml에 등록된 bean name을 가지고 사용가능해진다.
 ```java
 ApplicationContext context = new ClassPathXmlApplicationContext("spring/di/setting.xml");
 //ExamConsole console = (ExamConsole) context.getBean("console");
