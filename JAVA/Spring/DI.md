@@ -41,7 +41,7 @@ console.print();
 ```
 
 * setting.xml   
-사용하기 위한 class를 bean으로 등록해 준다. 여기서 <property/>를 통해 의존성을 주입해 줄 수 있다.
+사용하기 위한 class를 bean으로 등록해 준다. 여기서 `<property>` 를 통해 의존성을 주입해 줄 수 있다.
 ```
 <!--Exam exam = new NewlecExam();-->
 <bean id="exam" class="spring.di.entity.NewlecExam"/>
