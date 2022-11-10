@@ -32,7 +32,7 @@ console.print();
 
    
 
-* pom.xml
+* pom.xml   
 메이븐 프로젝트로 변경하여 pom.xml에 ApplicationContext을 사용하기위한 dependency를 등록해준다.(https://mvnrepository.com/)   
 ```
 <dependency>
@@ -42,7 +42,7 @@ console.print();
 </dependency>
 ```
 
-* setting.xml
+* setting.xml   
 setting.xml에 빈을 등록해준다.
 ```
 <!--Exam exam = new NewlecExam();-->
@@ -55,7 +55,7 @@ setting.xml에 빈을 등록해준다.
 </bean>
 ```
 
-* main.java
+* main.java   
 ApplicationContext 생성할때 위에서 bean을 설정한 setting.xml을 통해서 생성해주면 xml에 등록된 bean name을 가지고 사용가능해진다.
 ```java
 ApplicationContext context = new ClassPathXmlApplicationContext("spring/di/setting.xml");
