@@ -54,10 +54,15 @@ console.print();
 </bean>
 ```
 * GridExamConsole.java   
-※ExamConsole 을 상속한 GridExamConsole 클래스에 기본 생성자가 있어야만 bean등록이 된다.
+※ExamConsole 을 상속한 GridExamConsole 클래스에 기본 생성자와 setter가 있어야만 bean등록이 된다.
 ```java
 public class GridExamConsole implements ExamConsole {
   public GridExamConsole() {}
+  
+  @Override
+    public void setExam(Exam exam) {
+        this.exam = exam;
+    }
   ...
 }
 ```
