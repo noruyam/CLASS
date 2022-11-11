@@ -42,6 +42,7 @@ console.print();
 
 * setting.xml   
 사용하기 위한 class를 bean으로 등록해 준다. 여기서 `<property>` 를 통해 의존관계를 설정해 줄 수 있다.
+
 ```
 <!--Exam exam = new NewlecExam();-->
 <bean id="exam" class="spring.di.entity.NewlecExam"/>
@@ -52,7 +53,14 @@ console.print();
   <property name="exam"  ref="exam"/>
 </bean>
 ```
-
+* GridExamConsole.java
+※ExamConsole 을 상속한 GridExamConsole 클래스에 기본 생성자가 있어야만 bean등록이 된다.
+```java
+public class GridExamConsole implements ExamConsole {
+  public GridExamConsole() {}
+  ...
+}
+```
 * main.java   
 ApplicationContext 생성할 때 위에서 bean을 설정한 setting.xml을 통해서 생성해 주면 xml에 등록된 bean name을 가지고 사용 가능해진다.
 ```java
