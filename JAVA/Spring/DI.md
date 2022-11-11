@@ -28,7 +28,7 @@ console.setExam(exam);
 console.print();
 ```
 
-### 3. xml에서 bean 등록하여 사용하는 방법
+### 3. IoC(Inversion of Control) Container 에 bean 등록하여 사용하는 방법
 
 * pom.xml   
 메이븐 프로젝트로 변경 후 pom.xml에 ApplicationContext을 사용하기위한 dependency를 등록해준다.(https://mvnrepository.com/)   
@@ -75,3 +75,8 @@ ExamConsole console = context.getBean(ExamConsole.class);
 console.print();
 ```
 ---
+
+## IoC(Inversion of Control) Container
+Bean은 개발자가 IoC에 등록한 객체들이다.   
+IoC Container는 Bean의 관리를 도와주는 컨테이너이다.   
+Bean을 생성해서 Container에 등록하여 IoC 방식으로 운영하는 것이 많은 이점이 있기 때문에 존재한다.
