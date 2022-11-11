@@ -60,9 +60,9 @@ public class GridExamConsole implements ExamConsole {
   public GridExamConsole() {}
   private Exam exam;
   @Override
-    public void setExam(Exam exam) {
-        this.exam = exam;
-    }
+  public void setExam(Exam exam) {
+      this.exam = exam;
+  }
   ...
 }
 ```
