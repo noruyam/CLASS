@@ -53,7 +53,7 @@ console.print();
   <property name="exam"  ref="exam"/>
 </bean>
 ```
-* GridExamConsole.java
+* GridExamConsole.java   
 ※ExamConsole 을 상속한 GridExamConsole 클래스에 기본 생성자가 있어야만 bean등록이 된다.
 ```java
 public class GridExamConsole implements ExamConsole {
