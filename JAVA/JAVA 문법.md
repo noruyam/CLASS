@@ -29,9 +29,10 @@
 > replace : 모든 target replacement로 치환   
 > replaceAll : replace()와 비슷하나, 첫번째 인자로 정규식을 넣는다.   
 > replaceFirst : 첫번째 발견되는 target만 치환한다.
+
 ---
-> ## StringBuilder (java.lang.StringBuilder)
-> 생성자   
+
+> ## StringBuilder, StringBuffer   
 > StringBuilder sb = new StringBuilder(): 객체 선언   
 > StringBuilder sb = new StringBuilder("aaa"): 문자열을 바로 넣을 수도 있다.
 > 주요 메소드
