@@ -32,8 +32,8 @@
 
 > ## StringBuilder (java.lang.StringBuilder)
 
-> 생성자
-> StringBuilder sb = new StringBuilder(): 객체 선언
+> 생성자   
+> StringBuilder sb = new StringBuilder(): 객체 선언   
 > StringBuilder sb = new StringBuilder("aaa"): 문자열을 바로 넣을 수도 있다.
 > 주요 메소드
 > ```java
