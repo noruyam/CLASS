@@ -53,16 +53,20 @@
 ---
 
 > ## Stack
+> ```java
 > push(Object item) // Stack에 객체를 저장한다.
 > pop() //  Stack의 맨 위에 저장된 객체를 꺼낸다.
 > peek() // Stack의 맨 위에 저장된 객체를 반환한다. Stack에서 꺼내지는 않고, 비었을 때 null을 반환한다.
 > empty() // Stack이 비어있는지 알려준다. 있으면 true, 없으면 false를 반환한다. 
 > search(Object o) // Stack에서 주어진 객체를 찾아서 그 위치를 반환한다. (배열과는 달리 1부터 시작)
-
+> ```
+> 
 > ## Queue
+> ```java
 > add() // Queue에 객체를 저장. 성공하면 true, 실패하면 false를 반환한다.
 > element() // 삭제없이 저장된 요소를 읽어온다. peek와 다른 점은 queue가 비었을 때 Exception을 발생. (peek()는 null을 반환) 
 > offer() // Queue에 객체를 저장한다. 성공하면 true, 실패하면 false를 반환.
 > peek() // 삭제없이 읽어온다. Queue가 비었을 때 null을 반환.
 > poll() // Queue에서 꺼내온다. 비어있으면 null을 반환.
 > remove() // Queue에서 꺼내온다. 비어있으면 예외를 발생시킨다.
+> ```
