@@ -52,7 +52,8 @@
 
 ---
 
-> ## Stack 후입선출(LIFO, Last In First Out)
+> ## Stack   
+> 후입선출(LIFO, Last In First Out)
 > ```java
 > push(Object item) // Stack에 객체를 저장한다.
 > pop() //  Stack의 맨 위에 저장된 객체를 꺼낸다.
@@ -61,7 +62,8 @@
 > search(Object o) // Stack에서 주어진 객체를 찾아서 그 위치를 반환한다. (배열과는 달리 1부터 시작)
 > ```
 > 
-> ## Queue 선입선출(FIFO, First In First Out)
+> ## Queue   
+> 선입선출(FIFO, First In First Out)
 > ```java
 > add(Object o) // Queue에 객체를 저장. 성공하면 true, 실패하면 false를 반환한다.
 > element() // 삭제없이 저장된 요소를 읽어온다. peek와 다른 점은 queue가 비었을 때 Exception을 발생. (peek()는 null을 반환) 
