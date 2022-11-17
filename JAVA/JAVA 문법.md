@@ -49,3 +49,20 @@
 > .setLength(int len)// 문자열 길이 조정, 현재 문자열보다 길게 조정하면 공백으로 채워짐, 현재 문자열보다 짧게 조정하면 나머지 문자는 삭제
 > .trimToSize()// 문자열이 저장된 char[] 배열 사이즈를 현재 문자열 길이와 동일하게 조정, String 클래스의 trim()이 앞 뒤 공백을 제거하는 것과 같이 공백 사이즈를 제공하는 것, 배열의 남는 사이즈는 공백이므로, 문자열 뒷부분의 공백을 모두 제거해준다고 보면 됨
 > ```
+
+---
+
+> ## Stack
+> push(Object item) // Stack에 객체를 저장한다.
+> pop() //  Stack의 맨 위에 저장된 객체를 꺼낸다.
+> peek() // Stack의 맨 위에 저장된 객체를 반환한다. Stack에서 꺼내지는 않고, 비었을 때 null을 반환한다.
+> empty() // Stack이 비어있는지 알려준다. 있으면 true, 없으면 false를 반환한다. 
+> search(Object o) // Stack에서 주어진 객체를 찾아서 그 위치를 반환한다. (배열과는 달리 1부터 시작)
+
+> ## Queue
+> add() // Queue에 객체를 저장. 성공하면 true, 실패하면 false를 반환한다.
+> element() // 삭제없이 저장된 요소를 읽어온다. peek와 다른 점은 queue가 비었을 때 Exception을 발생. (peek()는 null을 반환) 
+> offer() // Queue에 객체를 저장한다. 성공하면 true, 실패하면 false를 반환.
+> peek() // 삭제없이 읽어온다. Queue가 비었을 때 null을 반환.
+> poll() // Queue에서 꺼내온다. 비어있으면 null을 반환.
+> remove() // Queue에서 꺼내온다. 비어있으면 예외를 발생시킨다.
