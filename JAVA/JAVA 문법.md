@@ -4,8 +4,8 @@
 
 >## substring()
 > ```java
-> substring(int startIndex);
-> substring(int startIndex, int endIndex);
+> .substring(int startIndex);
+> .substring(int startIndex, int endIndex);
 > ```
 > startIndex는 시작지점의 인덱스 값이고, endIndex는 종료 지점의 인덱스 값이다.   
 > 두 방식 모두 return 값으로 `String[]`을 리턴한다.   
@@ -13,7 +13,7 @@
 
 >## split()
 > ```java
-> split(String regex) // 파라미터로 들어오는 문자열을 기준으로 문자열을 쪼갠다. `String[]`을 리턴한다.
+> .split(String regex) // 파라미터로 들어오는 문자열을 기준으로 문자열을 쪼갠다. `String[]`을 리턴한다.
 > ```
 
 ---
@@ -21,9 +21,9 @@
 > ## replace(), replaceAll(), replaceFirst()
 >    
 > ```java
-> replace(CharSequence target, CharSequence replacement) // 모든 target replacement로 치환   
-> replaceAll(String regex, String replacement) // replace()와 비슷하나, 첫번째 인자로 정규식을 넣는다.   
-> replaceFirst(String target, String replacement) // 첫번째 발견되는 target만 치환한다.
+> .replace(CharSequence target, CharSequence replacement) // 모든 target replacement로 치환   
+> .replaceAll(String regex, String replacement) // replace()와 비슷하나, 첫번째 인자로 정규식을 넣는다.   
+> .replaceFirst(String target, String replacement) // 첫번째 발견되는 target만 치환한다.
 > ```
 
 ---
@@ -51,20 +51,20 @@
 > ## Stack   
 > 후입선출(LIFO, Last In First Out)
 > ```java
-> push(Object item) // Stack에 객체를 저장한다.
-> pop() //  Stack의 맨 위에 저장된 객체를 꺼낸다.
-> peek() // Stack의 맨 위에 저장된 객체를 반환한다. Stack에서 꺼내지는 않고, 비었을 때 null을 반환한다.
-> empty() // Stack이 비어있는지 알려준다. 있으면 true, 없으면 false를 반환한다. 
-> search(Object o) // Stack에서 주어진 객체를 찾아서 그 위치를 반환한다. (배열과는 달리 1부터 시작)
+> .push(Object item) // Stack에 객체를 저장한다.
+> .pop() //  Stack의 맨 위에 저장된 객체를 꺼낸다.
+> .peek() // Stack의 맨 위에 저장된 객체를 반환한다. Stack에서 꺼내지는 않고, 비었을 때 null을 반환한다.
+> .empty() // Stack이 비어있는지 알려준다. 있으면 true, 없으면 false를 반환한다. 
+> .search(Object o) // Stack에서 주어진 객체를 찾아서 그 위치를 반환한다. (배열과는 달리 1부터 시작)
 > ```
 > 
 > ## Queue   
 > 선입선출(FIFO, First In First Out)
 > ```java
-> add(Object o) // Queue에 객체를 저장. 성공하면 true, 실패하면 false를 반환한다.
-> element() // 삭제없이 저장된 요소를 읽어온다. peek와 다른 점은 queue가 비었을 때 Exception을 발생. (peek()는 null을 반환) 
-> offer(Object o) // Queue에 객체를 저장한다. 성공하면 true, 실패하면 false를 반환.
-> peek() // 삭제없이 읽어온다. Queue가 비었을 때 null을 반환.
-> poll() // Queue에서 꺼내온다. 비어있으면 null을 반환.
-> remove() // Queue에서 꺼내온다. 비어있으면 예외를 발생시킨다.
+> .add(Object o) // Queue에 객체를 저장. 성공하면 true, 실패하면 false를 반환한다.
+> .element() // 삭제없이 저장된 요소를 읽어온다. peek와 다른 점은 queue가 비었을 때 Exception을 발생. (peek()는 null을 반환) 
+> .offer(Object o) // Queue에 객체를 저장한다. 성공하면 true, 실패하면 false를 반환.
+> .peek() // 삭제없이 읽어온다. Queue가 비었을 때 null을 반환.
+> .poll() // Queue에서 꺼내온다. 비어있으면 null을 반환.
+> .remove() // Queue에서 꺼내온다. 비어있으면 예외를 발생시킨다.
 > ```
