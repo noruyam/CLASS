@@ -71,6 +71,7 @@
 
 
 > String 관련 메소드
+> ```java
 > .length() // str의 길이 반환
 > .isEmpty() // str의 길이가 0이면 true, 아니면 false
 > .charAt(2) // 인덱스로 문자 찾기, c 반환
@@ -93,4 +94,5 @@
 > str이 abcdd보다 사전순으로 뒤면 1
 > str과 abcdd가 마지막 문자만 다르면 마지막 문자의 사전순 차이 반환 (여기선 1)
 > */
+> ```
 
