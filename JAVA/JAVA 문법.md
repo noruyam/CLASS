@@ -70,7 +70,7 @@
 > ```
 
 
-> String 관련 메소드
+> ## String 관련 메소드
 > ```java
 > .length() // str의 길이 반환
 > .isEmpty() // str의 길이가 0이면 true, 아니면 false
