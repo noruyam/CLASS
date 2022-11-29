@@ -99,4 +99,15 @@
 
 ---
 
+> ## Integer 관련 메소드
+> ```java
+> .parseInt(String s) // String 타입의 문자열을 int 형으로 변환
+> .toString(int i) // int 타입의 문자열을 String 형으로 변환
+> .toBinaryString(int i) // 10진수를 2진수로 변환해 String으로 리턴
+> .toOctalString(int i) // 10진수를 8진수로 변환해 String으로 리턴
+> .toHexString(int i) // 10진수를 16진수로 변환해 String으로 리턴
+> .bitCount(int i) // 매개변수로 들어온 정수를 2진법으로 표현했을 때 bit 1이 몇 개있는지 리턴
+> .max(int a, int b) // 입력 받은 2개 정수 중 더 큰 값을 리턴
+> .min(int a, int b) // 입력 받은 2개 정수 중 더 작은 값을 리턴
+> ```
 
