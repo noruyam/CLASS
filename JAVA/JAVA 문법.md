@@ -2,32 +2,6 @@
 
 ---
 
->## substring()
-> ```java
-> .substring(int startIndex);
-> .substring(int startIndex, int endIndex);
-> ```
-> startIndex는 시작지점의 인덱스 값이고, endIndex는 종료 지점의 인덱스 값이다.   
-> 두 방식 모두 return 값으로 `String[]`을 리턴한다.   
----
-
->## split()
-> ```java
-> .split(String regex) // 파라미터로 들어오는 문자열을 기준으로 문자열을 쪼갠다. `String[]`을 리턴한다.
-> ```
-
----
-
-> ## replace(), replaceAll(), replaceFirst()
->    
-> ```java
-> .replace(CharSequence target, CharSequence replacement) // 모든 target replacement로 치환   
-> .replaceAll(String regex, String replacement) // replace()와 비슷하나, 첫번째 인자로 정규식을 넣는다.   
-> .replaceFirst(String target, String replacement) // 첫번째 발견되는 target만 치환한다.
-> ```
-
----
-
 > ## StringBuilder, StringBuffer   
 > StringBuilder sb = new StringBuilder(): 객체 선언   
 > StringBuilder sb = new StringBuilder("aaa"): 문자열을 바로 넣을 수도 있다.
@@ -81,6 +55,8 @@
 > .substring(2, 4) // 2~3 위치의 문자열 "cd" 반환
 > .substring(3) // 3부터 끝까지의 문자열 "de" 반환
 > .replace('b', 'k') // b를 k로 변경 (akcde)
+> .replaceAll(String regex, String replacement) // replace()와 비슷하나, 첫번째 인자로 정규식을 넣는다. 
+> .replaceFirst(String target, String replacement) // 첫번째 발견되는 target만 치환한다.
 > .equals("abcde") // str과 abcde를 비교해서 같으면 true, 다르면 false
 > .contains("bc") // str에 bc가 포함되어 있으면 true, 아니면 false
 > .split(" ") // 띄어쓰기로 구분된 문자열 str을 분리해서 String[] 배열 반환
