@@ -2,8 +2,8 @@
 
 ### 1. 설치 - 참고(https://hhseong.tistory.com/198)
 해당 블로그처럼 설치하려했으나 본 프로젝트는 jdk 1.8로 진행해야하는 프로젝트였기에 
-Jenkins 최신 버전인 2.357은 java8을 지원하지 않아 유효하지 않은 java version 이라며 start가 되지 않았다.
-Jenkins 완전 삭제가 필요했다. 
+Jenkins 최신 버전인 2.357은 java8을 지원하지 않아 유효하지 않은 java version 이라며 start가 되지 않았다.   
+Jenkins 완전 삭제하고 재설치를 해야했다.
 
 ### 완전 삭제 방법
 #### 1. jenkins stop   
