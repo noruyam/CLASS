@@ -23,6 +23,7 @@
 ## front-end
 - HTML
 - thymeleaf
+- JQuery
 
 ---
 
