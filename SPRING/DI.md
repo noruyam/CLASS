@@ -51,7 +51,8 @@ public class SampleController {
 더 좋은 디자인 패턴과 코드 품질을 위해서는 Constructor Injection을 사용해야 한다.
 
 
-## 4. IoC(Inversion of Control) Container 에 bean 등록하여 사용하는 방법
+# 사용 방법
+## 1. IoC(Inversion of Control) Container 에 bean 등록하여 사용하는 방법
 
 * pom.xml   
   메이븐 프로젝트로 변경 후 pom.xml에 ApplicationContext을 사용하기위한 dependency를 등록해준다.(https://mvnrepository.com/)
@@ -98,7 +99,7 @@ ExamConsole console = context.getBean(ExamConsole.class);
 console.print();
 ```
 
-## 5. 어노테이션을 사용한 방법 (XML Configuration 방식을 Java Configuration방식으로 변경)
+## 2. 어노테이션을 사용한 방법 (XML Configuration 방식을 Java Configuration방식으로 변경)
 
 ```xml
 <!--setting.xml에 어노테이션을 사용한다는 코드를 우선 선언한다.-->
