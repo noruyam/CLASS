@@ -26,7 +26,7 @@
 - HTML
 - thymeleaf
 - JQuery
-
+- Javascript
 ---
 
 ## 형상관리툴
