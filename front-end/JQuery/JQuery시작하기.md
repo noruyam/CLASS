@@ -9,10 +9,10 @@
 <!-- 적용방법 3 -->
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 ```
-첫 번째 방법은 API를 직접 다운받아 사용하는 방법입니다.
+- 첫 번째 방법은 API를 직접 다운받아 사용하는 방법입니다.
 파일은 compressed(jquery.js), uncompressed(jquery.min.js) 두 가지가 존재하는데 압축된 것과 안된 것으로 배포할 때는 min파일(compressed)를 사용하는 것이 좋습니다. (용량차이)   
-두 번째 방법은 CDN을 이용하는 방법으로 위의 예제에서는 구글의 것을 사용했습니다.   
-세 번째 방법은 jquery에서 제공하는 최신 버전의 jQuery url입니다.
+- 두 번째 방법은 CDN을 이용하는 방법으로 위의 예제에서는 구글의 것을 사용했습니다.   
+- 세 번째 방법은 jquery에서 제공하는 최신 버전의 jQuery url입니다.
 
 ## 2. jQuery의 시작
 ```
