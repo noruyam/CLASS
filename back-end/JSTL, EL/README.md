@@ -16,3 +16,5 @@
   1. JSP 속성영역 (request,  response, session, application) 저장된 속성 객체의 property를 출력한다
   2. 리터럴 데이터, 다양한 연산결과 출력이 가능하다
   3. JSTL과 연동이 가능하다
+
+[참고](https://creamilk88.tistory.com/117)
