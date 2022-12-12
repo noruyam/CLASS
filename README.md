@@ -12,6 +12,8 @@
 - Kafka
 - SPRING
 - JSP
+- mybatis
+
 ---
 
 ## database
