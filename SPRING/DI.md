@@ -5,19 +5,17 @@ DI란 외부에서 두 객체 간의 관계를 결정해주는 디자인 패턴�
 런타임 시에 관계를 동적으로 주입하여 유연성을 확보하고 결합도를 낮출 수 있게 해준다.   
 의존관계를 주입해주는 여러가지 방법중 몇가지를 살펴보도록 한다.
 
-## 1. 생성자 주입 방법
+## 1. Field Injection(필드 주입)
+변수 선언부에 @Autowired Annotation을 붙인다.
+
 ```java
-Exam exam = new NewlecExam();
-/*
-ExamConsole = 인터페이스 
-InlineExamConsole = ExamConsole 상속클래스
-GridExamConsole = ExamConsole 상속클래스
-ExamConsole이라는 중간 인터페이스를 놓고 클래스를 생성하도록 하여 결합력을 낮춤
-*/
-//ExamConsole console = new InlineExamConsole(exam);
-ExamConsole console = new GridExamConsole(exam);
-console.print();
+@Component
+public class SampleController {
+    @Autowired
+    private SampleService sampleService;
+}
 ```
+
 ## 2. setter 주입방법
 ```java
 Exam exam = new NewlecExam();
@@ -26,7 +24,34 @@ console.setExam(exam);
 console.print();
 ```
 
-## 3. IoC(Inversion of Control) Container 에 bean 등록하여 사용하는 방법
+## 3. Constructor Injection(생성자 주입)
+
+Constructor에 @Autowired Annotation을 붙여 의존성을 주입받을 수 있다.
+
+```
+@Component
+public class SampleService {
+    private SampleDAO sampleDAO;
+
+    @Autowired
+    public SampleService(SampleDAO sampleDAO) {
+        this.sampleDAO = sampleDAO;
+    }
+}
+
+@Component
+public class SampleController {
+
+    private final SampleService sampleService = new SampleService(new SampleDAO());
+
+    ...
+}
+```
+
+더 좋은 디자인 패턴과 코드 품질을 위해서는 Constructor Injection을 사용해야 한다.
+
+
+## 4. IoC(Inversion of Control) Container 에 bean 등록하여 사용하는 방법
 
 * pom.xml   
   메이븐 프로젝트로 변경 후 pom.xml에 ApplicationContext을 사용하기위한 dependency를 등록해준다.(https://mvnrepository.com/)
@@ -73,7 +98,7 @@ ExamConsole console = context.getBean(ExamConsole.class);
 console.print();
 ```
 
-## 4. 어노테이션을 사용한 방법 (XML Configuration 방식을 Java Configuration방식으로 변경)
+## 5. 어노테이션을 사용한 방법 (XML Configuration 방식을 Java Configuration방식으로 변경)
 
 ```xml
 <!--setting.xml에 어노테이션을 사용한다는 코드를 우선 선언한다.-->
