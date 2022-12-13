@@ -29,6 +29,11 @@
 - Javascript
 ---
 
+## server
+- WAS
+- WEB
+
+---
 ## 형상관리툴
 - Git
 - SVN
