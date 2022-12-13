@@ -5,35 +5,39 @@
 ## OS
 - [Linux](https://github.com/noruyam/Study_TOTAL/tree/main/OS/Linux)
 - [Windows](https://github.com/noruyam/Study_TOTAL/tree/main/OS/Windows)
+
 ---
+
 ## back-end
 - [JAVA](https://github.com/noruyam/Study_TOTAL/tree/main/back-end/JAVA)
-- JSTL,EL
-- Kafka
-- SPRING
-- JSP
-- mybatis
+- [JSTL,EL](https://github.com/noruyam/Study_TOTAL/tree/main/back-end/JSTL,EL)
+- [Kafka](https://github.com/noruyam/Study_TOTAL/tree/main/back-end/Kafka)
+- [SPRING](https://github.com/noruyam/Study_TOTAL/tree/main/back-end/SPRING)
+- [JSP](https://github.com/noruyam/Study_TOTAL/tree/main/back-end/JSP)
+- [mybatis](https://github.com/noruyam/Study_TOTAL/tree/main/back-end/mybatis)
 
 ---
 
 ## database
-- MySQL
-- ORACLE
+- [MySQL](https://github.com/noruyam/Study_TOTAL/tree/main/database/MySQL)
+- [ORACLE](https://github.com/noruyam/Study_TOTAL/tree/main/database/ORACLE)
 
 ---
 
 ## front-end
-- HTML
-- thymeleaf
-- JQuery
-- Javascript
+- [HTML](https://github.com/noruyam/Study_TOTAL/tree/main/front-end/HTML)
+- [thymeleaf](https://github.com/noruyam/Study_TOTAL/tree/main/front-end/thymeleaf)
+- [JQuery](https://github.com/noruyam/Study_TOTAL/tree/main/front-end/JQuery)
+- [Javascript](https://github.com/noruyam/Study_TOTAL/tree/main/front-end/Javascript)
+
 ---
 
 ## server
-- WAS
-- WEB
+- [WAS](https://github.com/noruyam/Study_TOTAL/tree/main/server/WAS)
+- [WEB](https://github.com/noruyam/Study_TOTAL/tree/main/server/WEB)
 
 ---
+
 ## 형상관리툴
-- Git
-- SVN
+- [Git](https://github.com/noruyam/Study_TOTAL/tree/main/형상관리툴/Git)
+- [SVN](https://github.com/noruyam/Study_TOTAL/tree/main/형상관리툴/SVN)
