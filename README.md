@@ -3,11 +3,11 @@
 --- 
 
 ## OS
-- Linux
-- Windows
+- [Linux](https://github.com/noruyam/Study_TOTAL/tree/main/OS/Linux)
+- [Windows](https://github.com/noruyam/Study_TOTAL/tree/main/OS/Windows)
 ---
 ## back-end
-- JAVA
+- [JAVA](https://github.com/noruyam/Study_TOTAL/tree/main/back-end/JAVA)
 - JSTL,EL
 - Kafka
 - SPRING
