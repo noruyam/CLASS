@@ -41,3 +41,12 @@
 ## 형상관리툴
 - [Git](https://github.com/noruyam/Study_TOTAL/tree/main/형상관리툴/Git)
 - [SVN](https://github.com/noruyam/Study_TOTAL/tree/main/형상관리툴/SVN)
+
+
+
+
+---
+
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=noruyam)](https://github.com/anuraghazra/github-readme-stats)
+---
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=noruyam)](https://github.com/anuraghazra/github-readme-stats)
