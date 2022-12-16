@@ -10,7 +10,7 @@
 
 ## back-end
 - [JAVA](https://github.com/noruyam/Study_TOTAL/tree/main/back-end/JAVA)
-- [JSTL,EL](https://github.com/noruyam/Study_TOTAL/tree/main/back-end/JSTL,EL)
+- [JSTL,EL](https://github.com/noruyam/Study_TOTAL/tree/main/back-end/JSTL%2C%20EL)
 - [Kafka](https://github.com/noruyam/Study_TOTAL/tree/main/back-end/Kafka)
 - [SPRING](https://github.com/noruyam/Study_TOTAL/tree/main/back-end/SPRING)
 - [JSP](https://github.com/noruyam/Study_TOTAL/tree/main/back-end/JSP)
