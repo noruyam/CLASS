@@ -27,3 +27,9 @@ https://www.freecodecamp.org/korean/news/git-push-to-remote-branch/
 2. github에 먼저 레파지토리를 생성하고, 로컬에 프로젝트를 생성해서 올리면 브랜치가 갈려버림
 
 나중에 공부가 필요할듯하다.
+
+## Git 커밋 취소(reset), 커밋 되돌리기(revert), 덮어쓰기(amend)
+[참고1](https://www.lainyzine.com/ko/article/git-reset-and-git-revert-and-git-commit-amend/)
+[참고2](https://gmlwjd9405.github.io/2018/05/25/git-add-cancle.html)
+
+커밋을 취소하고 remote에 다시 강제 push하는 작업이 있기 때문에 주의해야한다.
