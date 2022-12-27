@@ -33,3 +33,29 @@ https://www.freecodecamp.org/korean/news/git-push-to-remote-branch/
 [참고2](https://gmlwjd9405.github.io/2018/05/25/git-add-cancle.html)
 
 커밋을 취소하고 remote에 다시 강제 push하는 작업이 있기 때문에 주의해야한다.
+
+## git 개인 파일 올리기
+[참고](https://2vup.com/git-first-commit/)   
+블로그 참고하여 개인 파일을 올리다가 레파지토리가 private여서 밑에 보이는 오류가 발생했다.
+```
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+ssh키가 등록되어있지않아서 발생한 오류이다.
+그래서 다음 블로그를 참고하여 ssh 키를 생성하고 등록해준다.   
+[참고](https://ifuwanna.tistory.com/304)   
+
+`-keygen -t rsa -C “깃허브로그인메일"`   
+
+보통 경로는 밑에 경로에 생성된다.   
+
+`C:\Users\유저이름\.ssh\id_rsa.pub`   
+
+
+꼭 .pub 파일을 메모장으로 열어 key를 github에 등록해야한다.
+
+https://github.com/settings/keys 로 접속하면 등록할 수 있다. 
+
