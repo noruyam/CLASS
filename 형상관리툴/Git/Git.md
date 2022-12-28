@@ -46,16 +46,49 @@ and the repository exists.
 ```
 ssh키가 등록되어있지않아서 발생한 오류이다.
 그래서 다음 블로그를 참고하여 ssh 키를 생성하고 등록해준다.   
-[참고](https://ifuwanna.tistory.com/304)   
+[참고](https://ifuwanna.tistory.com/304)
 
-`-keygen -t rsa -C “깃허브로그인메일"`   
+`-keygen -t rsa -C “깃허브로그인메일"`
 
-보통 경로는 밑에 경로에 생성된다.   
+보통 경로는 밑에 경로에 생성된다.
 
-`C:\Users\유저이름\.ssh\id_rsa.pub`   
+`C:\Users\유저이름\.ssh\id_rsa.pub`
 
 
 꼭 .pub 파일을 메모장으로 열어 key를 github에 등록해야한다.
 
-https://github.com/settings/keys 로 접속하면 등록할 수 있다. 
+https://github.com/settings/keys 로 접속하면 등록할 수 있다.
 
+
+## git 한 레파지토리에 여러 프로젝트 올리기
+[참고](https://jie0025.tistory.com/59)
+1. git 설치는 필수적
+2. cmd를 열어서
+3. 올리고 싶은 프로젝트들이 존재하는 폴더로 이동
+4. git init
+5. git add ./폴더이름 
+폴더이름을 하나씩 add 해주어야한다.
+6. git commit -m "message"
+7. git remote add origin 레파지토리주소
+8. git push -u origin master
+
+정상적으로 올라갔는지 확인하면 끝!인데 해당 블로그를 그대로 복붙해서 올리다가 아래와 같은 오류가 발생했다.
+
+```html
+git pull master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+이유는 위에 7번에서 add해줄때 블로그에서 그대로 복붙해서 오타를 넣어버렸다.   
+origine 이라고 add해놓고 8번에서는 origin 으로 push하려 했기 때문에 에러가 발생한것.   
+
+다음 블로그를 참고해서 주소를 해제하고 재연결했다.   
+[참고](https://jjunii486.tistory.com/153)
+
+1. git remote -v 
+2. git remote remove 1에서나온이름
+3. git remote add origin 레파지토리깃주소
+4. git push -u origin master
